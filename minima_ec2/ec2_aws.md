@@ -1,17 +1,14 @@
 $${\color{red}WARNING}$$
-
-
 _This document assumes that you have an AWS account, and that account is secured with the leading practices [_[<span class="s1" style="color: rgb(220, 161, 13);">_Read and follow these instructions from AWS_</span>](https://docs.aws.amazon.com/accounts/latest/reference/welcome-first-time-user.html)_]_ That you understand that this document may contain errors which puts your value at risk. That this document will age poorly and may not be kept up to date with the latest requirements.
 
 _What do I mean by the above paragraph?_
 
 _You, not me, not this document, or any other information you read online is responsible for protecting yourself, just you! You need to take responsibility for your actions, especially when value is at risk._
-
 $${\color{red}YOU \space HAVE \space BEEN \space WARNED}$$
 
 
 
-**INTRODUCTION - Running a Minima Node on AWS EC2 Resource**
+# INTRODUCTION - Running a Minima Node on AWS EC2 Resource
 
 There are [<span class="s1" style="color: rgb(220, 161, 13);">many ways</span>](https://docs.minima.global/docs/runanode/get_started) to run a Minima Node. This document will describe how to run a node using AWS EC2 Resource. I’ll walk through the steps for someone with basic or limited AWS knowledge.
 
@@ -19,9 +16,11 @@ _[Yes I see the irony of running a highly distributed technology on a highly cen
 
 This is a basic diagram of what we are going to achieve.
 
-As you can see, this a lot for something so small and lightweight as Minima. The benefits come from the convenience of managed hardware, and security AWS can provides.
+![Basic Architectural Diagram of Minima Node Running in Docker on an EC2 instance.](aws-minima-arch.jpg)
 
-**What does AWS provide**
+As you can see, this a lot for something so small and lightweight as Minima. The benefits come from the convenience of managed hardware, and security AWS can provides but those benefits require trusting AWS. 
+
+## What does AWS provide
 
 When you use AWS you are leasing AWS’s resources [the cloud] This is an alternative to owning a device like a mobile or a home computer and running your node on that device.
 
@@ -29,11 +28,11 @@ Minima is small, so you don’t need a powerful EC2 instance, a small t2.micro i
 
 You get a lot for that $34 pa.<span class="Apple-converted-space"> </span> AWS data centres are highly secure [[<span class="s1" style="color: rgb(220, 161, 13);">Here</span>](https://aws.amazon.com/compliance/data-center/controls/)] You can create backups of your data. Using AWS is highly flexible, secure, and can be scripted and programmed in many many ways.<span class="Apple-converted-space"> </span>
 
-**About this guide**
+## About this guide
 
 This guide is as simple as I can make it. But that doesn’t mean you can set and forget. You need to learn more, and understand each part of this guide. As the end of the guide you may have a working Minima Node, but this is just the beginning of your journey into Minima and AWS.<span class="Apple-converted-space"> </span>
 
-**Here are the high level steps**
+### Here are the high level steps
 
 1.  Launch a new EC2 instance
 2.  Connect to your instance via the AWS Console
