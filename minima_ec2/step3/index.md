@@ -1,4 +1,4 @@
-[Back to step 2](../index.md)
+[Back to step 2](../step2/index.md) <-> [Goto step 4](../step4/index.md)
 
 # Step 3 - Install Minima
 
@@ -32,3 +32,5 @@ You should get something that contains this info
 ￼![](minimaContainer.png)
 
 At this stage you have a running EC2 instance [a virtual computer hosted by AWS], a docker environment with a container running the minima node.  Here is a basic diagram.
+
+[Goto step 4 - Run Minima and Watchtower docker containers](../step3/index.md)

@@ -1,4 +1,4 @@
-[Back to step 1](../index.md) <-> [Goto step 3](../step3/index.md)
+[Back to step 1](../step1/index.md) <-> [Goto step 3](../step3/index.md)
 
 # Step 2 - Install Docker
 
@@ -51,3 +51,5 @@ There is a final check if you really want to be sure. Stop and re Start your EC2
 systemctl status docker
 
 If all goes to plan you should see the service enabled and running.
+
+[Goto step 3 - Install Docker on that EC2 instance](../step3/index.md)
