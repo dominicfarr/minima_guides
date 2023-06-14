@@ -1,16 +1,15 @@
-<span style="color:red">WARNING</span>
+<span style="color:red">Important to recognise: You follow this guide at your own risk and the authors shall not be responsible or liable for any loss you may incure.</span>
 
-_This document assumes that you have an AWS account, and that account is secured with the leading practices [_[<span>_Read and follow these instructions from AWS_</span>](https://docs.aws.amazon.com/accounts/latest/reference/welcome-first-time-user.html)_]_ That you understand that this document may contain errors which puts your value at risk. That this document will not age well and may not be kept up to date with the latest requirements that keeps your safe and your value secure.
+* This guide assumes that you have an AWS account.
+* Your AWS account is secured with the leading practices. [Read and follow these instructions from AWS](https://docs.aws.amazon.com/accounts/latest/reference/welcome-first-time-user.html)
+* That you understand that this document may contain errors which puts your value at risk. 
+* That this document will not age well and may not be kept up to date with the latest requirements that keeps your safe and your value secure.
 
-_What do I mean by the above paragraph?_
+If you do find an issue or would like an update please add a [new issue](https://github.com/dominicfarr/minima_guides/issues) to the [repo](https://github.com/dominicfarr/minima_guides)
 
-_You, not me, not this document, or any other information you read online is responsible for protecting yourself, just you! You need to take responsibility for your actions, especially when value is at risk._
+#
 
-<span style="color:red">YOU HAVE BEEN WARNED</span>
-
-
-
-# INTRODUCTION - Running a Minima Node on AWS EC2 Resource
+# Running a Minima Node on AWS EC2 Resource
 
 There are [<span>many ways</span>](https://docs.minima.global/docs/runanode/get_started) to run a Minima Node. This document will describe how to run a node using AWS EC2 Resource. I’ll walk through the steps for someone with basic or limited AWS knowledge.
 
