@@ -40,4 +40,4 @@ This guide is as simple as I can make it. But that doesn’t mean you can set an
 4.  Run Minima and Watchtower docker containers
 5.  Access the MDS Hub
 
-[Got to step 1](./step1/README.md)
+[Got to step 1](./step1/index.md)

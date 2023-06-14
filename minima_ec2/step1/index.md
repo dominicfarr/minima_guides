@@ -1,4 +1,4 @@
-[Back to introduction](../README.md) - [Goto step2](../step2/index.md)
+[Back to introduction](../index.md) <-> [Goto step2](../step2/index.md)
 
 # Step 1 - Launch an EC2 instance
 
@@ -33,21 +33,19 @@ Selecting Launch instance a configuration form will appear. There are several im
 
 Give you instance a clear understandable name. Something like, MinimaNode.
 
-### Application and OS Images
+### Application and OS Images
 
 The default image is a good place to start. It’s free tier eligible; which means you don’t have to pay for the first year of your AWS account.  Basically leave all the defaults AWS gives you. For me that means I’m allowing AWS to select “*Amazon Linux 2023 AMI 2023.0.20230419.0 x86\_64 HVM kernel-6.1” instance.* 
 
-### Instance type
+### Instance type
 
 This determines the power of the machine and hence its cost. The smallest [cheapest] machine I found that works consistently is a t2.micro 1GiB Memory. It also happens to be the default, so again, no need to change anything. 
 
-### Key pair (login)
+### Key pair (login)
 
 This is important: You will need it later to connect to your instance.
 
 You must create a new key pair or select a previously created pair. [BOYK and linking them to your EC2 instance is beyond this document] 
-
-If you don’t know what you are doing, you can just allow AWS to create them via the Create new key pair link. 
 
 ![](keypairCreation.png)
 
@@ -55,7 +53,7 @@ The Create key pair dialog window will appear, where you can name your new key p
 
 ![](createKeyPairWizard.png)
 
-### Network settings
+### Networking settings
 
 A very important section. I’ll give a basic configuration only changing the defaults where absolutely necessary.
 
@@ -69,19 +67,18 @@ Give your new security group a clear name
 
 ![](securityGroupName.png)
 
-Inbound security groups rules  need only change if you want to browse to Minima node’s MDS Hub. If you prefer a web application to a command terminal you may want to access the MDS Hub and therefore these network changes are needed. 
 
 You need two rules:
 
 #### Security group rule 1
 
-Allows secure connection using ssh to your EC2 instance
+Allows secure connection to your EC2 instance via ssh or the web console
 
 Type: ssh
 
 Source type: Anywhere
 
-[This should already be in place as AWS configures this by default. 
+This should already be in place as AWS configures this by default. 
 
 ![](securityRule1.png)
 
@@ -123,7 +120,8 @@ Everything else is good at default. Click Launch instance button and your instan
 
 This doesn’t mean your EC2 instance is ready to use, but the launch was successful. 
 
-Select the instances on the left side menu of the console to see you EC2 being created. It will be initialising at first, then some time later it will be running, and have passed two checks. 
+Select the `instances` on the left side menu of the console to see you EC2 being created. It will be initialising at first, then some time later it will be running, and have passed two checks. 
 
 ![](ec2InstanceList.png)
 
+[Goto step2 - Connect to your instance via the AWS Console](../step2/index.md)
