@@ -41,4 +41,4 @@ This guide is as simple as I can make it. But that doesn’t mean you can set an
 5.  Run Watch tower container
 6.  Access the MDS Hub
 
-[Got to step 1 - Launch a new EC2 instance](./step1/index.md)
+[Goto step 1 - Launch a new EC2 instance](./step1/index.md)
