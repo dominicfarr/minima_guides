@@ -7,7 +7,6 @@
 
 If you do find an issue or would like an update please add a [new issue](https://github.com/dominicfarr/minima_guides/issues) to the [repo](https://github.com/dominicfarr/minima_guides)
 
-#
 
 # Running a Minima Node on AWS EC2 Resource
 
