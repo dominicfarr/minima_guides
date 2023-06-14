@@ -1,36 +1,45 @@
-[Back to step 2](../step2/index.md) <-> [Goto step 4](../step4/index.md)
+[Introduction](../index.md) > [Step 1](../step1/index.md) > [Step 2](../step2/index.md)  > <u>Step 3</u> > *Step 4* > *Step 5* > *Step 6*
 
-# Step 3 - Install Minima
+# Step 3 - Install Docker
 
-Downloading Minima’s docker image and starting a container using that image is straightforward. However, the command to do this has important aspects and parameters that I’m not covering in this guide. Please refer to the [Minima docs](https://docs.minima.global/docs/runanode/get_started) for complete details of these parameters.
-
----
-
-In the EC2 terminal, execute the following command. 
-
-Before doing so, update the mdspassword value to something only you know, is fairly long [+10 characters], includes a mixture of elements [upper, lower, numbers, but no punctuation.]  
-
-The backslash \ is a convenience to allow this command to correctly span multiple lines for ease of reading. 
+Installing Docker is straightforward. We can run a few commands to install and keeping Docker running even if you restart your EC2 instance. Below are the 6 commands to achieve those objectives. 
 
 ```bash
-docker run -d --name minimaNode \
--e minima_mdspassword=PasswordsNeed2BLongButEasy2Remember \
--e minima_server=true \
--v ~/minimaNode:/home/minima/data \
--p 8001-8004:9001-9004 \
---restart unless-stopped \
-minimaglobal/minima:latest
+sudo yum update
+
+sudo yum install docker
+
+sudo addgroup docker
+
+sudo usermod -a -G docker ec2-user sudo systemctl enable docker
+
+sudo systemctl start docker
 ```
-After executing the command docker will search for minima locally, fail to find it, so will download it from Minima Docker repository. Then it will create a running container with the configured ports and volumes [file system where data will be stored]
 
-You can check installation worked by executing the following command
+NB:
 
-docker ps
+#1 probably isn’t needed as the Amazon image is kept up to date, but it is a good practice to start there. 
 
-You should get something that contains this info
+*#2 “yum install docker”* does what is says. When you execute this command the terminal will ask your permission to install. Type y followed by enter key. 
 
-￼![](minimaContainer.png)
+Commands 3-6 are about making sure permissions are correct, making docker a background service, and configuring your system to start docker on startup. 
 
-At this stage you have a running EC2 instance [a virtual computer hosted by AWS], a docker environment with a container running the minima node.  Here is a basic diagram.
+Nice work! Docker is installed; running; configured as a service which automatically starts when your EC2 instance starts. 
 
-[Goto step 4 - Run Minima and Watchtower docker containers](../step3/index.md)
+We should run some checks to make sure everything is correct. Type in this command:
+
+systemctl status docker
+
+You should get some output like this [and more] Look out for the text in green: enabled and active (running) 
+
+![](dockerServiceRunning.png)
+
+Press q to quit this command. 
+
+There is a final check if you really want to be sure. Stop and re Start your EC2 instance; reconnect; execute the status command.
+
+systemctl status docker
+
+If all goes to plan you should see the service enabled and running.
+
+[Goto step 4 - Run Minima container](../step4/index.md)

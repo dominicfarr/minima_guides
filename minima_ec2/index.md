@@ -36,8 +36,9 @@ This guide is as simple as I can make it. But that doesn’t mean you can set an
 
 1.  Launch a new EC2 instance
 2.  Connect to your instance via the AWS Console
-3.  Install Docker on that EC2 instance
-4.  Run Minima and Watchtower docker containers
-5.  Access the MDS Hub
+3.  Install Docker on your EC2 instance
+4.  Run Minima container
+5.  Run Watch tower container
+6.  Access the MDS Hub
 
-[Got to step 1](./step1/index.md)
+[Got to step 1 - Launch a new EC2 instance](./step1/index.md)

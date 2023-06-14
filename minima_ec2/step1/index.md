@@ -1,4 +1,4 @@
-[Introduction](../index.md) > <span style:"color:green">Step 1</span> > Step 2 > Step 3 > Step 4 > Step 5
+[Introduction](../index.md) > <u>Step 1</u> > *Step 2* > *Step 3* > *Step 4* > *Step 5* > *Step 6*
 
 # Step 1 - Launch an EC2 instance
 
