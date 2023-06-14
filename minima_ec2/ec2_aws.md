@@ -1,6 +1,6 @@
 <span style="color:red">WARNING</span>
 
-_This document assumes that you have an AWS account, and that account is secured with the leading practices [_[<span class="s1" style="color: rgb(220, 161, 13);">_Read and follow these instructions from AWS_</span>](https://docs.aws.amazon.com/accounts/latest/reference/welcome-first-time-user.html)_]_ That you understand that this document may contain errors which puts your value at risk. That this document will age poorly and may not be kept up to date with the latest requirements.
+_This document assumes that you have an AWS account, and that account is secured with the leading practices [_[<span class="s1" style="color: rgb(220, 161, 13);">_Read and follow these instructions from AWS_</span>](https://docs.aws.amazon.com/accounts/latest/reference/welcome-first-time-user.html)_]_ That you understand that this document may contain errors which puts your value at risk. That this document will not age well and may not be kept up to date with the latest requirements that keeps your safe and your value secure.
 
 _What do I mean by the above paragraph?_
 
@@ -41,3 +41,5 @@ This guide is as simple as I can make it. But that doesn’t mean you can set an
 3.  Install Docker on that EC2 instance
 4.  Run Minima and Watchtower docker containers
 5.  Access the MDS Hub
+
+(Got to step 1)[/launch-a-new-ec2-instance.md]
