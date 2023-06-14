@@ -24,6 +24,8 @@ NB:
 
 Commands 3-6 are about making sure permissions are correct, making docker a background service, and configuring your system to start docker on startup. 
 
+---
+
 Nice work! Docker is installed; running; configured as a service which automatically starts when your EC2 instance starts. 
 
 We should run some checks to make sure everything is correct. Type in this command:
