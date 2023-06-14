@@ -1,4 +1,4 @@
-[Back to introduction](../README.md)
+[Back to introduction](../README.md) - [Goto step2](../step2/index.md)
 
 # Step 1 - Launch an EC2 instance
 
