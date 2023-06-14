@@ -14,6 +14,7 @@ A new screen will open with a Terminal, allowing your to type commands and contr
 
 Installing Docker is straightforward. We can run a few commands to install and keeping Docker running even if you restart your EC2 instance. Below are the 6 commands to achieve those objectives. 
 
+```bash
 sudo yum update
 
 sudo yum install docker
@@ -23,6 +24,7 @@ sudo addgroup docker
 sudo usermod -a -G docker ec2-user sudo systemctl enable docker
 
 sudo systemctl start docker
+```
 
 NB:
 
