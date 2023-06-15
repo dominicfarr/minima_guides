@@ -2,35 +2,42 @@
 
 # Step 3 - Install Docker
 
-Installing Docker is straightforward. We can run a few commands to install and keeping Docker running even if you restart your EC2 instance. Below are the 6 commands to achieve those objectives. 
+Installing Docker is straightforward 
+
+`That's easy for me to say 😥` 
+
+We can run command to install Docker. Type the following into your terminal and Docker will download automatically.
 
 ```bash
-sudo yum update
-
 sudo yum install docker
-
-sudo addgroup docker
-
-sudo usermod -a -G docker ec2-user sudo systemctl enable docker
-
-sudo systemctl start docker
 ```
 
-NB:
+To keep Docker running even if you restart your EC2 instance we need a few more commands 🪄
 
-#1 probably isn’t needed as the Amazon image is kept up to date, but it is a good practice to start there. 
 
-*#2 “yum install docker”* does what is says. When you execute this command the terminal will ask your permission to install. Type y followed by enter key. 
+```bash
+sudo addgroup docker
 
-Commands 3-6 are about making sure permissions are correct, making docker a background service, and configuring your system to start docker on startup. 
+sudo usermod -a -G docker ec2-user 
+
+sudo systemctl enable docker
+```
+
+Finally, to start Docker 🏁
+
+```bash 
+sudo systemctl start docker
+```
 
 ---
 
 Nice work! Docker is installed; running; configured as a service which automatically starts when your EC2 instance starts. 
 
-We should run some checks to make sure everything is correct. Type in this command:
+We should run some checks ✅ to make sure everything is correct. Type in this command:
 
-`systemctl status docker`
+```
+systemctl status docker
+```
 
 You should get some output like this [and more] Look out for the text in green: enabled and active (running) 
 
