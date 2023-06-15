@@ -1,4 +1,4 @@
-[Introduction](../index.md) > [Step 1](../step1/index.md) > [Step 2](../step2/index.md)  > [Step 2](../step3/index.md) > <u>Step 4</u> > *Step 5* > *Step 6*
+[Introduction](../index.md) > [Step 1](../step1/index.md) > [Step 2](../step2/index.md)  > [Step 3](../step3/index.md) > <u>Step 4</u> > *Step 5* > *Step 6*
 
 # Step 4 - Run Minima container
 
