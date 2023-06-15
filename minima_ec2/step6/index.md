@@ -26,3 +26,7 @@ This access is allowed only from your machine. When you configured your EC2 and 
 **
 
 This is the End of the guide, but not the end of the journey. Head over the Minima docs and learn about securing your node, backing up your name, and other important tasks. 
+
+
+
+

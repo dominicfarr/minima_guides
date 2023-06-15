@@ -9,5 +9,12 @@ Similar to creating the Minima node Docker container, a simple command to the Do
 
 `docker run -d --restart unless-stopped --name watchtower -e WATCHTOWER_CLEANUP=true -e WATCHTOWER_TIMEOUT=60s -e WATCHTOWER_POLL_INTERVAL=28800 -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower`
 
+After this completes check your Docker
+
+`docker ps`
+
+You should see watchtower container running
+
+![](watchtowercontainer.png)
 
 [Goto step 6 - Access the MDS Hub](../step6/index.md)
