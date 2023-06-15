@@ -21,17 +21,16 @@ docker run -d --name minimaNode \
 --restart unless-stopped \
 minimaglobal/minima:latest
 ```
-After executing the command docker will search for minima locally, fail to find it, so will download it from Minima Docker repository. Then it will create a running container with the configured ports and volumes [file system where data will be stored]
+After executing the command docker will search for minima locally, fail to find it, and will download it from Minima Docker repository. Then it will create a running container with the configured ports and volumes [file system where data will be stored]
 
-You can check installation worked by executing the following command
+You can check installation by executing the following command
 
-docker ps
+`docker ps`
 
-You should get something that contains this info
+A log of running containers will be displayed. Your log should contains something similar to this:
 
 ￼![](minimaContainer.png)
 
-At this stage you have a running EC2 instance [a virtual computer hosted by AWS], a docker environment with a container running the minima node.  Here is a basic diagram.
-
+At this stage you have a running EC2 instance, with a docker environment with a container running the Minima node. Furthermore, you have a separate encrypted volume that stores your data—in this case the Minima node data.
 
 [Goto step 5 - Run Watchtower container](../step5/index.md)
