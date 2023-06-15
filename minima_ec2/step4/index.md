@@ -4,7 +4,7 @@
 
 Next we need to add the Minima container to our Docker service. A container is an isoloated "box" which holds the Minima node, and where it runs, uneffected by anything outside of the its container. 🚢 📦
 
-Another command in our termain will downloading Minima docker container, and starting as a container. 
+Another command in our termainal window will downloading Minima docker container, and starting as a container. 
 
 The command to do this has important aspects and parameters that I’m not covering in this guide. Please refer to the [Minima docs](https://docs.minima.global/docs/runanode/get_started) for complete details of these parameters.
 
@@ -13,9 +13,9 @@ The command to do this has important aspects and parameters that I’m not cover
 In the EC2 terminal, execute the following command. 
 
 ```
-Before executing this command it is impoart to the mdspassword value to something only you know. 
+Before executing this command it is important to the mdspassword value to something only you know. 
 It should be fairly long [+10 characters] 
-Includes a mixture of elements [upper, lower, numbers, but no punctuation.]  
+Includes a mixture of elements [upper, lower, numbers, but no punctuation]  
 ```
 
 `The backslash \ is a convenience to allow this command to correctly span multiple lines for ease of reading. `
@@ -38,7 +38,7 @@ Executing the following command will show Minima running with the latest version
 
 A log of running containers will be displayed. Your log should contains something similar to this:
 
-￼![](minimaContainer.png)
+![](minimaContainer.png)
 
 At this stage you have:
 * EC2 instance ✅ 

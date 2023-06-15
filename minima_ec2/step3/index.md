@@ -6,7 +6,7 @@ Installing Docker is straightforward
 
 `That's easy for me to say 😥` 
 
-We can run command to install Docker. Type the following into your terminal and Docker will download automatically.
+We can run a command to install Docker. Type the following into your terminal and Docker will download automatically.
 
 ```bash
 sudo yum install docker
@@ -39,7 +39,7 @@ We should run some checks ✅ to make sure everything is correct. Type in this c
 systemctl status docker
 ```
 
-You should get some output like this [and more] Look out for the text in green: enabled and active (running) 
+You should get some output like this. Look out for the text in green: enabled and active (running) 
 
 ![](dockerServiceRunning.png)
 

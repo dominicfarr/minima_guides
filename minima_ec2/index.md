@@ -18,7 +18,7 @@ This is a basic diagram of what we are going to achieve.
 
 ![Basic Architectural Diagram of Minima Node Running in Docker on an EC2 instance.](aws-minima-arch.jpg)
 
-As you can see, this a lot for something so small and lightweight as Minima. The benefits 👍 would come from, the convenience of managed hardware, and security AWS can provides. However, both those benefits require trusting AWS 📃. 
+As you can see, this is a lot for something so small and lightweight as Minima. The benefits 👍 would come from the convenience of managed hardware. It does require trusting AWS 📃 
 
 ---
 ## What does AWS provide
@@ -28,7 +28,7 @@ Assuming 🧐 you
 * [Secured](https://docs.aws.amazon.com/accounts/latest/reference/welcome-first-time-user.html) it correctly. 🤥
 
 
-When you use AWS you are leasing AWS’s resources ☁  and Minima is small, so you don’t need to much power ⚙️ 
+When you use AWS you are leasing AWS’s resources ☁  and Minima is small, so you don’t need too much power ⚙️ 
 
 At the time of writing this, an "EC2 t2.micro" instance with 8GiB storage will cost about $35USD per year. 
 

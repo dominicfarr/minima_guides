@@ -33,7 +33,7 @@ Find the Launch instance button and click to start the Creation Wizard.
 
 ![](launchEC2Wizard.png)
 
-Press 👆 the Launch instance. The configuration form will appear. 
+The configuration form will appear. 
 
 ```
 You can leave the values AWS preselected for much of the configuration 👍 
@@ -57,7 +57,7 @@ You must create a new key pair or select a previously created pair.
 
 ![](keypairCreation.png)
 
-👆 Create new key pair. The create key pair dialog window will appear, where you can name your new key pair, and keep everything else as defaulted. 
+👆 Create new key pair. The create key pair dialog window will appear, where you can name your new key pair, and keep everything else as default. 
 
 ![](createKeyPairWizard.png)
 

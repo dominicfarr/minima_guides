@@ -12,7 +12,7 @@ A new screen will be shown called Connect to instance.
 
 Check your User name, make sure it is configured to ec2-user 👀. Then, select 👆 the orange Connect button
 
-A new screen will open with a Terminal, allowing your to type commands and control your EC2 instance. 💪
+A new screen will open with a Terminal, allowing you to type commands and control your EC2 instance. 💪
 
 ![](terminal.png)
 

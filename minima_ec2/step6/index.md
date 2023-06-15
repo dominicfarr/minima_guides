@@ -15,13 +15,13 @@ Get the url of your EC2 instance from the AWS Console.
 
 ![](img.png)
 
-Copy the address and paste it into a browser. Add :8003 to the end of the url before sending. EG. For my demo I would browser to the following address.
+Copy the address and paste it into a browser. Add :8003 to the end of the url before sending. EG. For my demo I would browse to the following address.
 
 `https://ec2-35-170-202-212.compute-1.amazonaws.com:8003/`
 
 After accepting the certificate warning—due to the MDS site have a self signed certificate—you will see the MDS Hub login page.
 
-This access is allowed only from your machine. When you configured your EC2 and added the second security group rule.
+This access is allowed only from your machine, because you configured your EC2 to have a security group rule to allow traffic to this port from your machine IP 🤔
 
 ![](securityRule2.png)
 
