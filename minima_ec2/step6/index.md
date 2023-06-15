@@ -2,8 +2,11 @@
 
 # Step 6 - Access the MDS Hub
 
-Final step! If you made it this far, great effort 👏
+If you made it this far, great effort. 
 
+![](greatEffort.gif)
+
+---
 Accessing the Minima node MDS Hub via the browser is possible. 
 
 ![](hubaccess.jpg)
@@ -22,11 +25,10 @@ This access is allowed only from your machine. When you configured your EC2 and 
 
 ![](securityRule2.png)
 
-**If you aren't seeing the MDS Hub and the browser timesout, it could mean your IP has changed. Double check by going to the Security Groups in the AWS console and find the Security Group you created, and edit the rule if needed. 
-**
+```
+If you aren't seeing the MDS Hub and the browser timesout, it could mean your IP has changed. Double check by going to the Security Groups in the AWS console and find the Security Group you created, and edit the rule if needed. 
+```
 
-This is the End of the guide, but not the end of the journey. Head over the Minima docs and learn about securing your node, backing up your name, and other important tasks. 
+This is the End of the guide, but not the end of the journey. Head over the [Minima docs](https://docs.minima.global/docs/runanode/get_started) and learn about securing your node, how to backing up your node, and other important tasks. 
 
-
-
-
+![](goodHunting.gif)
