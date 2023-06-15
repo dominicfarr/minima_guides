@@ -2,28 +2,37 @@
 
 # Step 4 - Run Minima container
 
-Downloading Minima’s docker image and starting a container using that image is straightforward. However, the command to do this has important aspects and parameters that I’m not covering in this guide. Please refer to the [Minima docs](https://docs.minima.global/docs/runanode/get_started) for complete details of these parameters.
+Next we need to add the Minima container to our Docker service. A container is an isoloated "box" which holds the Minima node, and where it runs, uneffected by anything outside of the its container. 🚢 📦
+
+Another command in our termain will downloading Minima docker container, and starting as a container. 
+
+The command to do this has important aspects and parameters that I’m not covering in this guide. Please refer to the [Minima docs](https://docs.minima.global/docs/runanode/get_started) for complete details of these parameters.
 
 ---
 
 In the EC2 terminal, execute the following command. 
 
-Before doing so, update the mdspassword value to something only you know, is fairly long [+10 characters], includes a mixture of elements [upper, lower, numbers, but no punctuation.]  
+```
+Before executing this command it is impoart to the mdspassword value to something only you know. 
+It should be fairly long [+10 characters] 
+Includes a mixture of elements [upper, lower, numbers, but no punctuation.]  
+```
 
-The backslash \ is a convenience to allow this command to correctly span multiple lines for ease of reading. 
+`The backslash \ is a convenience to allow this command to correctly span multiple lines for ease of reading. `
 
 ```bash
 docker run -d --name minimaNode \
--e minima_mdspassword=PasswordsNeed2BLongButEasy2Remember \
+-e minima_mdspassword=PasswordsNeed2BLongButEasy2RememberPlsChangeThisValueToSomethingOnlyYouKnow \
 -e minima_server=true \
 -v ~/minimaNode:/home/minima/data \
 -p 8001-8004:9001-9004 \
 --restart unless-stopped \
 minimaglobal/minima:latest
 ```
-After executing the command docker will search for minima locally, fail to find it, and will download it from Minima Docker repository. Then it will create a running container with the configured ports and volumes [file system where data will be stored]
+This Docker command will automatically download Minima from the Docker repository. 
+Then, create a running container configured as described.
 
-You can check installation by executing the following command
+Executing the following command will show Minima running with the latest version.
 
 `docker ps`
 
@@ -31,6 +40,11 @@ A log of running containers will be displayed. Your log should contains somethin
 
 ￼![](minimaContainer.png)
 
-At this stage you have a running EC2 instance, with a docker environment with a container running the Minima node. Furthermore, you have a separate encrypted volume that stores your data—in this case the Minima node data.
+At this stage you have:
+* EC2 instance ✅ 
+* Docker env        ironment ✅
+* Minima node container ✅. 
+
+![](hero.gif)
 
 [Goto step 5 - Run Watchtower container](../step5/index.md)
