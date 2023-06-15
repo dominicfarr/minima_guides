@@ -37,5 +37,5 @@ You should get some output like this [and more] Look out for the text in green: 
 ![](dockerServiceRunning.png)
 
 Press q to quit this command. 
-    
+
 [Goto step 4 - Run Minima container](../step4/index.md)
