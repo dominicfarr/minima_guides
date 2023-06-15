@@ -2,7 +2,7 @@
 
 # Step 5 - Run Watchtower container
 
-Directly from the Minima [docs(https://docs.minima.global/docs/runanode/selectplatform/linux_desktop#automate-updates-with-watchtower)]. 
+Directly from the Minima [docs](https://docs.minima.global/docs/runanode/selectplatform/linux_desktop#automate-updates-with-watchtower) 
 Watchtower container enables automatic updates of your Minima node when a new version is released. 
 
 Similar to creating the Minima node Docker container, a simple command to the Docker system will download and start Watchtower.
