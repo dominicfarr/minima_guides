@@ -2,24 +2,26 @@
 
 # Step 1 - Launch an EC2 instance
 
-Assuming you have secured your AWS account *with the leading practices we can now move to create an EC2 instance that will host your Minima Node.  
-
-*If you are the type of person that wants 100% control this **isn’t** the guide for you. There is a contractual agreement between you and AWS, where AWS has physical access to your machine and and keys for encryption. This requires a lot of trust.* 
+🧐 You have logged into the AWS console?
 
 ## Selecting where to run your EC2
 
-The instance needs to live somewhere, so you need to choose which global region to run your compute. For me it’s North Virgina, but I suggest you pick something close to you. Each region has a specific pricing model so make sure you understand that before selecting. 
+The EC2 instance needs to live somewhere, so you need to choose which global region to run your compute. I suggest you pick something close to you. 
+
+[Did you check the region pricing for AWS? 🤥]
 
 Select the AWS region you are closest to in the dropdown in the top right corner of the AWS console. 
 
 ![](selectRegion.png)
 
+---
 ## EC2 Dashboard
 
 Using the AWS console search bar, type ec2 and select EC2 Virtual Servers in the Cloud
 
 ![](ec2Dashboard.png)
 
+---
 ## Start the EC2 creation wizard
 
 Find the Launch instance button and click to start the Creation Wizard.
@@ -27,15 +29,15 @@ Find the Launch instance button and click to start the Creation Wizard.
 
 ![](launchEC2Wizard.png)
 
-Selecting Launch instance a configuration form will appear. There are several important configurations you need to complete. This is a fairly large form [7 sections], which I will only detail where to make changes. If I don’t mention something you can leave the default values AWS pre-selected. 
+Press 👆 the Launch instance. The configuration form will appear. If I don’t mention something you can leave the default values AWS pre-selected. 
 
 ### Name and tags
 
-Give you instance a clear understandable name. Something like, MinimaNode.
+Give your instance a clear understandable name. Something like, Minima.
 
 ### Application and OS Images
 
-The default image is a good place to start. It’s free tier eligible; which means you don’t have to pay for the first year of your AWS account.  Basically leave all the defaults AWS gives you. For me that means I’m allowing AWS to select “*Amazon Linux 2023 AMI 2023.0.20230419.0 x86\_64 HVM kernel-6.1” instance.* 
+The default image is a good. It’s free tier eligible, which means you don’t have to pay for the first year of your AWS account.
 
 ### Instance type
 
@@ -43,25 +45,25 @@ This determines the power of the machine and hence its cost. The smallest [cheap
 
 ### Key pair (login)
 
-This is important: You will need it later to connect to your instance.
-
-You must create a new key pair or select a previously created pair. [BOYK and linking them to your EC2 instance is beyond this document] 
+You must create a new key pair or select a previously created pair.
 
 ![](keypairCreation.png)
 
-The Create key pair dialog window will appear, where you can name your new key pair, and keep everything else as defaulted. 
+👆 Create new key pair. The create key pair dialog window will appear, where you can name your new key pair, and keep everything else as defaulted. 
 
 ![](createKeyPairWizard.png)
 
 ### Networking settings
 
-A very important section. I’ll give a basic configuration only changing the defaults where absolutely necessary.
+A very important section. This will keep you safe 🥽 
 
-Click the Edit button.
+I’ll give a basic configuration.
 
-Keep the default VPC
+* Click the Edit button
 
-Create a security group
+* Keep the default VPC
+
+* Create a security group
 
 Give your new security group a clear name
 
@@ -70,19 +72,11 @@ Give your new security group a clear name
 
 You need two rules:
 
-#### Security group rule 1
-
-Allows secure connection to your EC2 instance via ssh or the web console
-
-Type: ssh
-
-Source type: Anywhere
-
-This should already be in place as AWS configures this by default. 
+Rule 1 is already configured
 
 ![](securityRule1.png)
 
-#### Security group rule 2
+### Security group rule 2
 
 Allows traffic from only your computer to your EC2 instance via a browser but only with a port of 8003
 
@@ -102,19 +96,21 @@ Open the advanced view
 
 ![](storageAdvancedSettings.png)
 
-Create an encrypted volume. 
+* Create an encrypted volume
 
-Device name: This value should be remembered as it will be needed when restoring from a failure. 
+* Remember the Device name: This value will be needed if/when a restore from failure is needed. 
 
-Delete on termination: No
+* Delete on termination: No
 
-Volume type: gp2
+* Volume type: gp2
 
-Encrypted: Encrypted KMS key: default aws/ebs
+* Encrypted: Encrypted KMS key: default aws/ebs
 
 ![](defaultKMS.png)
 
-Everything else is good at default. Click Launch instance button and your instance will start to be created. Shortly after you should see the success page. 
+Everything else is good at default. Click Launch instance button. Your instance will start to be created. 
+
+Shortly after you should see the success page. 
 
 ![](successNotice.png)
 
