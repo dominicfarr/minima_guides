@@ -37,11 +37,5 @@ You should get some output like this [and more] Look out for the text in green: 
 ![](dockerServiceRunning.png)
 
 Press q to quit this command. 
-
-There is a final check if you really want to be sure. Stop and re Start your EC2 instance; reconnect; execute the status command.
-
-`systemctl status docker`
-
-If all goes to plan you should see the service enabled and running.
-
+    
 [Goto step 4 - Run Minima container](../step4/index.md)
