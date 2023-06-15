@@ -14,13 +14,13 @@ A simple command into our teminal window will download and start Watchtower 🗼
 docker run -d --restart unless-stopped --name watchtower -e WATCHTOWER_CLEANUP=true -e WATCHTOWER_TIMEOUT=60s -e WATCHTOWER_POLL_INTERVAL=28800 -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower
 ```
 
-After this completes check your Docker
-
+After this completes you can see which containers are running. 
 ```bash
 docker ps
 ```
 
-You should see watchtower container running
+🤞 you have Watchtower and Minima
+
 
 ![](watchtowercontainer.png)
 
