@@ -16,7 +16,7 @@ Either url or ip will work. Just add :8003 to the end. For my demo I would brows
 
 `https://ec2-35-170-202-212.compute-1.amazonaws.com:8003/`
 
-After accepting the certificate warning—due to the MDS site has a self signed certificate—you will see the MDS Hub login page.
+After accepting the certificate warning—due to the MDS site have a self signed certificate—you will see the MDS Hub login page.
 
 This access is allowed only from your machine. When you configured your EC2 and added the second security group rule.
 
