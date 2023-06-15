@@ -30,7 +30,7 @@ Nice work! Docker is installed; running; configured as a service which automatic
 
 We should run some checks to make sure everything is correct. Type in this command:
 
-systemctl status docker
+`systemctl status docker`
 
 You should get some output like this [and more] Look out for the text in green: enabled and active (running) 
 
@@ -40,7 +40,7 @@ Press q to quit this command.
 
 There is a final check if you really want to be sure. Stop and re Start your EC2 instance; reconnect; execute the status command.
 
-systemctl status docker
+`systemctl status docker`
 
 If all goes to plan you should see the service enabled and running.
 
