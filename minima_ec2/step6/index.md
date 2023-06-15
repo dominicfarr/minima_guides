@@ -2,17 +2,17 @@
 
 # Step 6 - Access the MDS Hub
 
-Final step, if you made this far, great effort 👏
+Final step! If you made it this far, great effort 👏
 
 Accessing the Minima node MDS Hub via the browser is possible. 
 
 ![](hubaccess.jpg)
 
-Get the url or IP of your EC2 instance from the AWS Console.
+Get the url of your EC2 instance from the AWS Console.
 
 ![](img.png)
 
-Either url or ip will work. Just add :8003 to the end. For my demo I would browser to the following address.
+Copy the address and paste it into a browser. Add :8003 to the end of the url before sending. EG. For my demo I would browser to the following address.
 
 `https://ec2-35-170-202-212.compute-1.amazonaws.com:8003/`
 
