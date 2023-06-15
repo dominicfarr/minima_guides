@@ -6,7 +6,9 @@ Final step, if you made this far, great effort 👏
 
 Accessing the Minima node MDS Hub via the browser is possible. 
 
- Get the url or IP of your EC2 instance from the AWS Console.
+![](hubaccess.jpg)
+
+Get the url or IP of your EC2 instance from the AWS Console.
 
 ![](img.png)
 
@@ -16,15 +18,11 @@ Either url or ip will work. Just add :8003 to the end. For my demo I would brows
 
 After accepting the certificate warning—due to the MDS site has a self signed certificate—you will see the MDS Hub login page.
 
-![](mdsHub.png)
+This access is allowed only from your machine. When you configured your EC2 and added the second security group rule.
 
-![](hubaccess.jpg)
+![](securityRule2.png)
 
+**If you aren't seeing the MDS Hub and the browser timesout, it could mean your IP has changed. Double check by going to the Security Groups in the AWS console and find the Security Group you created, and edit the rule if needed. 
+**
 
----
-The End...not quiet; you still need to:
-
-1. Find and remember the seed phrase
-2. The other thing
-3. The that thing too
-4. 
+This is the End of the guide, but not the end of the journey. Head over the Minima docs and learn about securing your node, backing up your name, and other important tasks. 
