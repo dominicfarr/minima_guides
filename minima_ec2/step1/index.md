@@ -2,13 +2,17 @@
 
 # Step 1 - Launch an EC2 instance
 
+```
 🧐 You have logged into the AWS console?
+```
 
 ## Selecting where to run your EC2
 
-The EC2 instance needs to live somewhere, so you need to choose which global region to run your compute. I suggest you pick something close to you. 
+The EC2 instance needs to `live` 🏠 somewhere. You need to choose which global region to run your compute. I suggest you pick something close to you. 
 
-[Did you check the region pricing for AWS? 🤥]
+```
+Did you check the regional pricing in AWS? 🧐
+```
 
 Select the AWS region you are closest to in the dropdown in the top right corner of the AWS console. 
 
@@ -29,11 +33,15 @@ Find the Launch instance button and click to start the Creation Wizard.
 
 ![](launchEC2Wizard.png)
 
-Press 👆 the Launch instance. The configuration form will appear. If I don’t mention something you can leave the default values AWS pre-selected. 
+Press 👆 the Launch instance. The configuration form will appear. 
+
+```
+You can leave the values AWS preselected for much of the configuration 👍 
+```
 
 ### Name and tags
 
-Give your instance a clear understandable name. Something like, Minima.
+Give your instance a clear understandable name. Something like, `Minima`.
 
 ### Application and OS Images
 
@@ -116,7 +124,7 @@ Shortly after you should see the success page.
 
 This doesn’t mean your EC2 instance is ready to use, but the launch was successful. 
 
-Select the `instances` on the left side menu of the console to see you EC2 being created. It will be initialising at first, then some time later it will be running, and have passed two checks. 
+Select the `instances` on the left side menu of the AWS console to see you EC2 being created. It will be initialising at first, then some time later it will be running, and have passed two checks. 
 
 ![](ec2InstanceList.png)
 

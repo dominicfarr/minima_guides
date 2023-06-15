@@ -10,7 +10,9 @@ If you do find an issue or would like an update please add a [new issue](https:/
 
 There are [<span>many ways</span>](https://docs.minima.global/docs/runanode/get_started) to run a Minima Node. This document will describe how to run a node using AWS EC2 Resource. I’ll walk through the steps for someone with basic or limited AWS knowledge.
 
-_[Yes scorching case of irony_❤️‍🔥 [_or over engineering_ 👀] _running a tiny, highly distributed, technology like [Minima](https://minima.global) on a highly centralised service like AWS_ 😲]
+```md 
+Yes I see the irony [or over engineering 👀] of running a tiny, highly distributed, technology like Minima on a highly centralised service like AWS 😲
+```
 
 This is a basic diagram of what we are going to achieve.
 
@@ -28,7 +30,7 @@ Assuming 🧐 you
 
 When you use AWS you are leasing AWS’s resources ☁  and Minima is small, so you don’t need to much power ⚙️ 
 
-At the time of writing this, an "EC2 t2.micro" instance with 8GiB storage will cost about $34USD per year. 
+At the time of writing this, an "EC2 t2.micro" instance with 8GiB storage will cost about $35USD per year. 
 
 ---
 ## Here are the high level steps
