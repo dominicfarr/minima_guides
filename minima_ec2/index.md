@@ -1,12 +1,6 @@
-<span style="color:red">Important to recognise: You follow this guide at your own risk and the authors shall not be responsible or liable for any loss you may incure.</span>
 
-* This guide assumes that you have an AWS account.
-* Your AWS account is secured with the leading practices. [Read and follow these instructions from AWS](https://docs.aws.amazon.com/accounts/latest/reference/welcome-first-time-user.html)
-* That you understand that this document may contain errors which puts your value at risk. 
-* That this document will not age well and may not be kept up to date with the latest requirements that keeps your safe and your value secure.
-
+Minima can store value & AWS cost money, so I'm going to be clear: You follow this guide at your own risk. 🤷‍♂️
 If you do find an issue or would like an update please add a [new issue](https://github.com/dominicfarr/minima_guides/issues) to the [repo](https://github.com/dominicfarr/minima_guides)
-
 
 # Running a Minima Node on AWS EC2 Resource
 
@@ -21,6 +15,11 @@ This is a basic diagram of what we are going to achieve.
 As you can see, this a lot for something so small and lightweight as Minima. The benefits come from the convenience of managed hardware, and security AWS can provides but those benefits require trusting AWS. 
 
 ## What does AWS provide
+
+Assuming 🧐 you 
+* have an AWS account.
+* [Secured](https://docs.aws.amazon.com/accounts/latest/reference/welcome-first-time-user.html) it correctly. 🤥
+
 
 When you use AWS you are leasing AWS’s resources [the cloud] This is an alternative to owning a device like a mobile or a home computer and running your node on that device.
 
