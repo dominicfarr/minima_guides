@@ -96,7 +96,7 @@ Port range: 8003
 
 ![](securityRule2.png)
 
-[NB: Port 8003 is the port the docker container exposes to allow access to the MDS Hub. If you change that port when installing Minima, you will need to change this port to match, otherwise the firewall will deny access.]
+[NB: Port 8003 is the port the docker container exposes to allow access to the MDS Hub. If you change that port when installing Minima, you will need to change this port to match, otherwise the firewall will deny access. More details found here [Ports used in Minima](https://docs.minima.global/docs/runanode/systemrequirements#ports-used)]
 
 ### Storage (volumes)
 
