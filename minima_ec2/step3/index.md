@@ -16,7 +16,7 @@ To keep Docker running even if you restart your EC2 instance we need a few more 
 
 
 ```bash
-sudo addgroup docker
+sudo groupadd docker
 
 sudo usermod -a -G docker ec2-user 
 
