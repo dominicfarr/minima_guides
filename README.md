@@ -1,4 +1,2 @@
 # Minima Guides
-A collection of Minima guides
-
-Each of these guides is available as a site: [Minima Guides](https://minima-guides.formulathoughts.com)
+Visit [Minima Guides](https://minima-guides.formulathoughts.com) for details
