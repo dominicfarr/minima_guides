@@ -22,7 +22,7 @@ Then, add a tag for use in the next step, the DLM policy target.
 
 ![](add-tag.png)
 
-The key should describe what the DLM policy is doing. For me I'm backing up every hour so my key is HourlySnapshotDLM with a value of Yes. You can choice your backup or snaphot frequency and create a tag accordingly.
+The key should describe what the DLM policy is doing. For me I'm backing up every hour so my key is HourlySnapshotDLM with a value of Yes. You can chose your backup or snaphot frequency and create a tag accordingly.
 
 Remember to hit the orange Save button before moving on to the next step.
 
