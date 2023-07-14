@@ -69,11 +69,11 @@ For my example I have selected:
 
 ![](dlm-frequency.png)
 
-The time is when it first kicks off. We will want to put that 10 - 15 minutes ahead of the current UTC. You can check that [here(https://www.utctime.net/)]
+The time is when it first kicks off. We will want to put that 10 - 15 minutes ahead of the current UTC. You can check that [here](https://www.utctime.net/)
 
 The last setting is the Rention value.
 
-For my example use a count of 1. Which means AWS will keep the last snapshot; when a new snapshot is taken an hour later, the old snapshot is automatically delete.
+For my example I use a count of 1. Which means AWS will keep the last snapshot; when a new snapshot is taken an hour later, the old snapshot is automatically delete.
 
 You can chose a different rention period if you like. Just remember snapshots cost money in AWS.
 
