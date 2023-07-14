@@ -10,7 +10,7 @@ If you do find an issue or would like an update please add a [new issue](https:/
 
 # Create a regular automatic backup of your Minima Node
 
-This guide is about creating a regular backup of your data so if something goes wrong with your instance or your storage you can recover your Minima Node without lost of value or data.
+This guide is about creating a regular backup of your data so if something goes wrong with your instance you can recover your Minima Node to the last backup. This is different to the [backup feature](https://docs.minima.global/docs/runanode/selectplatform/linux_vps#how-to-take-a-backup-of-your-node) in Minima. If you use the Minima backup feature you still need to protect your backup file outside of where you running your node. This guide is about how that can be done within AWS.
 
 This guide is best as a following on from [Running Minima on an AWS EC2 instance](https://minima-guides.formulathoughts.com/minima_ec2/) and makes assumptions about your environment. That is, you have an AWS EC2 instance with an encrypted EBS volume where a Minima Node is storing its data. Something similar to this.
 
