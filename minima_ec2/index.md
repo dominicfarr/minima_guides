@@ -1,8 +1,9 @@
-## About this guide
+## About these guides
 
-This guide is as simple as I can make it. But that doesn’t mean you can set and forget. You need to learn more, and understand each part of this guide. At the end of the guide you may have a working [Minima](https://minima.global) node, but this is just the beginning of your journey into [Minima](https://minima.global). 
+These [guides](https://minima-guides.formulathoughts.com/) are only 1 stop in your [Minima](https://minima.global) journey. 
 
 [Minima](https://minima.global) can store value & AWS resources cost money, so I'm going to be clear: You follow this guide at your own risk. 🤷‍♂️
+
 If you do find an issue or would like an update please add a [new issue](https://github.com/dominicfarr/minima_guides/issues) to the [repo](https://github.com/dominicfarr/minima_guides)
 
 ---
