@@ -26,4 +26,4 @@ The key should describe what the DLM policy is doing. For me I'm backing up ever
 
 Remember to hit the orange Save button before moving on to the next step.
 
-[Goto step2 - Create a DLM or Data Lifecycle Manager Policy](../step2/index.md)
+[Goto step 2 - Create a DLM or Data Lifecycle Manager Policy](../step2/index.md)

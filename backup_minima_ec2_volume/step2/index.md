@@ -85,3 +85,5 @@ The last step is a review of your values. Double check the values and if you are
 
 You will now see a Data Lifecycle policy in the manager table.
 ![](dlm.png)
+
+[Goto step 3 - Confirm your snapshot is created](../step3/index.md)
