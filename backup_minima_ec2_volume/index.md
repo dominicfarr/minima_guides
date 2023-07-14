@@ -22,4 +22,4 @@ This guide is best as a following on from [Running Minima on an AWS EC2 instance
 2. Create a DLM or Data Lifecycle Manager Policy
 3. Confirm your snapshot is created
 
-[Goto step 1 - Create a Data Lifecycle Manager Policy](./step1/index.md)
+[Goto step 1 - Tag your EBS for the DLM policy](./step1/index.md)
